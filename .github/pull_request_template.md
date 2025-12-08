@@ -13,7 +13,7 @@
 # Checklist
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
-- [ ] I have followed the PR process as described [here](https://docs.skyscrapers.eu/coding_guidelines/git/#pull-requests)
+- [ ] I have followed the PR process as described [here](https://docs.skyscrapers.eu/docs/how-to-guides/coding_guidelines/git/#pull-requests)
 - [ ] My code has been tested: 
   - [ ] Locally (please provide details if applicable)  
   - [ ] In this PR using Atlantis 
