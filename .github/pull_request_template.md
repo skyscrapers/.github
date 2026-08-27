@@ -21,8 +21,6 @@
   - [ ] contains breaking changes 
 
 > [!TIP]
-> - If you’ve made any changes to the IaC, you can manually trigger Atlantis to test your changes.
-> - Changes to the code in the `terraform/live` folder will automatically trigger Atlantis.
-> - If you’ve made changes to the code in the `terraform/modules` folder, you can manually trigger Atlantis by commenting on the PR with: 
+> - Changes under `terraform/live` autoplan the changed stack. A change to a local module under `terraform/modules`, or to a stack that other stacks depend on, autoplans every consuming stack as well (Atlantis builds the project list from the terragrunt dependency graph).
+> - To plan a stack by hand, to re-run a plan, or on a repository where that dependency autoplan is switched off, comment on the PR:
 `atlantis plan -d terraform/live/<environment>/<project>`.
-This command will trigger a plan for the specified project within the specified environment.
